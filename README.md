@@ -5,9 +5,9 @@ The script requires a DEM, Easting and Northing (UTM Coordinates) of the crater 
 Default options are to run using: '-t complex', '-a 1', '-pc 4', and 'sd 1'.
 
 Crater Centroids for Proof of Concepts Paper --
-Barringer: 497928 3876083
-Elgygytgyn: 544170 7486427
-Goat Paddock: 254184 7971237
+Barringer: 497928 3876083 \
+Elgygytgyn: 544170 7486427 \
+Goat Paddock: 254184 7971237 \
 Haughton: 425022 8368829
 Logancha: 637001 7268087
 Mistastin: 481363 6193702
