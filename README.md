@@ -1,10 +1,25 @@
-Radial_profile_analysis_numba.py is the Python script used to estimate the apparent outer rim diameter of a hypervelocity impact crater.\
-It uses digital elevation models (DEMs) to identify topographic rings surrounding an impact structure through an iterative process and \
-assigns the most consistently identified positive relief ring as the putative outer rim.
+RadialProfileAnalysisSystem.py is the Python script developed for the paper [Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets](https://iopscience.iop.org/article/10.3847/PSJ/adb969). 
 
-The script requires a DEM, Easting and Northing (UTM Coordinates) of the crater center, an estimate of the inner ring diameter.
+The Radial Profile Analysis System estimates the apparent outer rim diameter of a hypervelocity impact crater using a digital elevation model (DEM) and centroid coordinates as input. Topographic rings surrounding an impact structure are identified through an iterative process and the most consistently identified positive relief ring is selected as the putative outer rim. The Radial Profile Analysis System can be run in the following modes:
+- Simple: Predict outer rim using inner cavity diameter estimates.
+- Complex: Predict outer rim using outer rim diameter estimates.
+- Unknown: Attempt to run in complex mode. Failure to detect an outer rim in complex mode will rerun in simple mode.
 
-Default options are to run using: '-t complex', '-a 1', '-pc 4', and 'sd 1'.
+The script requires a DEM projected into a UTM coordinate reference system, Easting and Northing (UTM Coordinates) of the crater center, and an estimate of the inner ring diameter to initialize the search window. The following packages are required:
+- Pandas
+- Geopandas
+- Shapely
+- Scipy
+- Numba
+- Numpy
+- Rasterio
+
+The Radial Profile Analysis System was designed and validated when using specific input parameters. These are provided as user-defined command line inputs, but results are not guaranteed unless the following are used:
+- '-pc'/'--peakCount': Number of detected peaks to be considered a potential outer rim. Designed using a value of 4.
+- '-a'/'--radiiStep': Step size in degrees to create radii. Designed using a value of 1.
+- '-sd'/'--searchDistance': Search distance variant: 1 or 2. Designed using option 1.
+- '-pthresh'/'--pthresh': Flag to select all 4th order polynomial elevation topographic rings. Designed to only select 10.
+
 
 Crater Centroids for Proof of Concepts Paper -- \
 Barringer: 497928 3876083 \
@@ -15,11 +30,6 @@ Logancha: 637001 7268087 \
 Mistastin: 481363 6193702 \
 Tswaing: 608886 7189307 
 
-Additional -- \
-Pantasma: 613388 1477474 \
-Zhamanshin: 348626 5358055 \
-Iturralde: 643522 8607871 \
-Bosumtwi: 676030 719179 
 
 
 
