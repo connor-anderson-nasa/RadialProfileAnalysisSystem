@@ -23,8 +23,12 @@ The Radial Profile Analysis System was designed and validated when using specifi
 
 The hardcoded thresholds and search window sizes used within the script were determined through trial and error using a set of reference impact structures and available DEMs. These values may not be extensible to all planetary bodies, impact structure forms, or DEM resolutions.  
 
+The Radial Profile Analysis System searches for circular topographic features within a DEM. An accurate centroid coordinate is critical for the successful determination of the outer rim. The threshold of acceptable positional error in the centroid coordinate has not been determined. It is possible that the Radial Profile Analysis System will fail to identify an inner or outer rim if the centroid coordinate is misplaced. 
+
+A loose estimate of the inner cavity diameter is required to initialize where the Radial Profile Analysis System searches for topographic rings. Significant over or underestimations of this value could result in the Radial Profile Analysis System searching the incorrect location. It is better to overestimate rather than underestimate this parameter. 
+
 ## Paper Inputs
-Crater Centroids used for terrestrial impact structures within the paper:
+Crater centroids used for the selected terrestrial impact structures:
 - Barringer: 497928 3876083
 - Elgygytgyn: 544170 7486427
 - Goat Paddock: 254184 7971237
