@@ -23,7 +23,7 @@ The Radial Profile Analysis System was designed and validated when using specifi
 The hardcoded thresholds and search window sizes used within the script were determined through trial and error using a set of reference impact structures and available DEMs. These values may not be extensible to all planetary bodies, impact structure forms, or DEM resolutions.  
 
 
-Crater Centroids used for terrestrial impact structures within the paper -- \
+Crater Centroids used for terrestrial impact structures within the paper:
 - Barringer: 497928 3876083
 - Elgygytgyn: 544170 7486427
 - Goat Paddock: 254184 7971237
