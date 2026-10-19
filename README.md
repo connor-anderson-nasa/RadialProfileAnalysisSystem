@@ -20,15 +20,21 @@ The Radial Profile Analysis System was designed and validated when using specifi
 - '-sd'/'--searchDistance': Search distance variant: 1 or 2. Designed using option 1.
 - '-pthresh'/'--pthresh': Flag to select all 4th order polynomial elevation topographic rings. Designed to only select 10.
 
+The hardcoded thresholds and search window sizes used within the script were determined through trial and error using a set of reference impact structures and available DEMs. These values may not be extensible to all planetary bodies, impact structure forms, or DEM resolutions.  
 
-Crater Centroids for Proof of Concepts Paper -- \
-Barringer: 497928 3876083 \
-Elgygytgyn: 544170 7486427 \
-Goat Paddock: 254184 7971237 \
-Haughton: 425022 8368829 \
-Logancha: 637001 7268087 \
-Mistastin: 481363 6193702 \
-Tswaing: 608886 7189307 
+
+Crater Centroids used for terrestrial impact structures within the paper -- \
+- Barringer: 497928 3876083
+- Elgygytgyn: 544170 7486427
+- Goat Paddock: 254184 7971237
+- Haughton: 425022 8368829
+- Logancha: 637001 7268087
+- Mistastin: 481363 6193702
+- Tswaing: 608886 7189307
+
+# Citation
+If you use this code and/or derived products in a scientific publication, please cite:
+- Anderson, C. J., Garvin, J. B., McClain, D. R., Sinno, S. S., Melocik, K. A., & Tucker, C. J. (2025). Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets. The Planetary Science Journal, 6(3), 76.
 
 
 
