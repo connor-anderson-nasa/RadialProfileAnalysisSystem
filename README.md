@@ -5,7 +5,7 @@ RadialProfileAnalysisSystem.py is the Python script developed for the paper [Ide
 - Unknown: Attempt to run in complex mode. Failure to detect an outer rim in complex mode will rerun in simple mode.
 
 ## Dependencies
-The script requires a DEM projected into a UTM coordinate reference system, Easting and Northing (UTM Coordinates) of the crater center, and an estimate of the inner ring diameter to initialize the search window. The following packages are required:
+The script requires a DEM projected into a UTM coordinate reference system, Easting and Northing (UTM Coordinates) of the crater center, and an estimate of the inner ring diameter to initialize the search window. The following Python packages are required:
 - Pandas
 - Geopandas
 - Shapely
@@ -14,6 +14,7 @@ The script requires a DEM projected into a UTM coordinate reference system, East
 - Numpy
 - Rasterio
 
+## Disclaimer
 The Radial Profile Analysis System was designed and validated when using specific input parameters. These are provided as user-defined command line inputs, but results are not guaranteed unless the following are used:
 - '-pc'/'--peakCount': Number of detected peaks to be considered a potential outer rim. Designed using a value of 4.
 - '-a'/'--radiiStep': Step size in degrees to create radii. Designed using a value of 1.
@@ -22,7 +23,7 @@ The Radial Profile Analysis System was designed and validated when using specifi
 
 The hardcoded thresholds and search window sizes used within the script were determined through trial and error using a set of reference impact structures and available DEMs. These values may not be extensible to all planetary bodies, impact structure forms, or DEM resolutions.  
 
-
+## Paper Inputs
 Crater Centroids used for terrestrial impact structures within the paper:
 - Barringer: 497928 3876083
 - Elgygytgyn: 544170 7486427
