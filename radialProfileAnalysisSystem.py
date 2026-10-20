@@ -728,9 +728,6 @@ def main():
                         help="""\
     Loose estimate for inner cavity diameter in meters.
     It is better to overestimate than underestimate this parameter.""")
-    parser.add_argument('-w', '--windowSize', type=int, metavar='WINDOW',
-                        help="""Matching window size in meters.
-                        Used to count the number of peaks.""")
     parser.add_argument('-pc', '--peakCount', type=int, metavar='PEAKCOUNT',
                         help="""Number of detected peaks to be considered a potential outer rim.
                         Used to filter out individual peaks.""")
