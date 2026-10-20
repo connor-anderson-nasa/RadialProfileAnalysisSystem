@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org)]([https://doi.org](https://doi.org/10.5281/zenodo.23503865))
+[[DOI]](https://doi.org/10.5281/zenodo.23503865)
 
 # Radial Profile Analysis System
 RadialProfileAnalysisSystem.py is the Python script developed for the paper: [Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets](https://iopscience.iop.org/article/10.3847/PSJ/adb969). The Radial Profile Analysis System estimates the apparent outer rim diameter of a hypervelocity impact crater using a digital elevation model (DEM) and centroid coordinates as input. Topographic rings surrounding an impact structure are identified through an iterative process and the most consistently identified positive relief ring is selected as the putative outer rim. The Radial Profile Analysis System can be run in the following modes:
