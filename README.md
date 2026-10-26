@@ -42,7 +42,7 @@ Crater centroids used for the selected terrestrial impact structures:
 # Citation
 If you use this code and/or derived products in a scientific publication, please cite:
 - Anderson, C. J., Garvin, J. B., McClain, D. R., Sinno, S. S., Melocik, K. A., & Tucker, C. J. (2025). Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets. The Planetary Science Journal, 6(3), 76.
-- Anderson, C., Garvin, J., McClain, D., Sinno, S., Melocik, K., & Tucker, C. (2026). Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets - Paper Version. In The Planetary Science Journal (Vol. 6, Issue 3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23503865
+- Anderson, C., Garvin, J., McClain, D., Sinno, S., Melocik, K., & Tucker, C. (2026). Identifying the Dimensions of Degraded Impact Structures Using Digital Elevation Models: A Proof of Concept for Silicate Planets - Radial Profile Analysis System Code. In The Planetary Science Journal (Vol. 6, Issue 3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23503865
 
 
 
